@@ -44,7 +44,20 @@ export const page = defineType({
       name: 'pageBuilder',
       title: 'Page builder',
       type: 'array',
-      of: [{type: 'callToAction'}, {type: 'infoSection'}],
+      of: [
+        {type: 'callToAction'},
+        {type: 'infoSection'},
+        {type: 'announcementContent'},
+        {type: 'bannerContent'},
+        {type: 'blogCardsContent'},
+        {type: 'ctaContent'},
+        {type: 'faqContent'},
+        {type: 'formContent'},
+        {type: 'pricingContent'},
+        {type: 'sectionContent'},
+        {type: 'statsContent'},
+        {type: 'testimonialsContent'},
+      ],
       options: {
         insertMenu: {
           // Configure the "Add Item" menu to display a thumbnail preview of the content type. https://www.sanity.io/docs/array-type#efb1fe03459d

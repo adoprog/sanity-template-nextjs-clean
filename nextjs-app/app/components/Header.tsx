@@ -66,8 +66,13 @@ export default function Header() {
               className="flex items-center gap-4 md:gap-6 leading-5 text-sm md:text-base tracking-tight font-normal"
             >
               <li>
-                <Link href="/about" className="">
-                  About
+                <Link href="/banking" className="">
+                  Banking
+                </Link>
+              </li>
+              <li>
+                <Link href="/healthcare" className="">
+                  Healthcare
                 </Link>
               </li>
 

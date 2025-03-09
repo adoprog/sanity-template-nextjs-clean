@@ -1,8 +1,18 @@
 import React from "react";
 
 import Cta from "@/app/components/Cta";
+import MarketingCta from "./marketing/cta";
 import Info from "@/app/components/InfoSection";
 import { dataAttr } from "@/sanity/lib/utils";
+import Banner from "./marketing/banner";
+import Pricing from "./marketing/pricing";
+import Announcement from "./marketing/announcement";
+import BlogCards from "./marketing/blogCards";
+import Faq from "./marketing/faq";
+import Form from "./marketing/form";
+import Section from "./marketing/section";
+import Stats from "./marketing/stats";
+import Testimonials from "./marketing/testimonials";
 
 type BlocksType = {
   [key: string]: React.FC<any>;
@@ -23,6 +33,16 @@ type BlockProps = {
 const Blocks: BlocksType = {
   callToAction: Cta,
   infoSection: Info,
+  announcementContent: Announcement,
+  bannerContent: Banner,
+  blogCardsContent: BlogCards,
+  ctaContent: MarketingCta,
+  faqContent: Faq,
+  formContent: Form,
+  pricingContent: Pricing,
+  sectionContent: Section,
+  statsContent: Stats,
+  testimonialsContent: Testimonials  
 };
 
 /**

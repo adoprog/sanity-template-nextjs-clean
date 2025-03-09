@@ -49,6 +49,11 @@ export const getPageQuery = defineQuery(`
           }
         }
       },
+      _type == "blogCardsContent" => {
+        "posts": posts[]-> {
+          ${postFields}
+        }
+      },
     },
   }
 `);
